@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhixiao Zhang's Experiences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/first.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Homepage</a>
+            <a href="experiences.html">Experiences</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Job Experiences & Projects</h1>
+        <section>
+            <h2>Professional Experience</h2>
+            <details>
+                <summary>Software Engineer Intern at TikTok</summary>
+                <p>
+                    <picture id="companyLogo">
+                        <source media="(min-width:0px) and (max-width: 768px)" height="20" srcset="media/TikTok-small.png">
+                        <source media="(min-width:768px) and (max-width: 992px)" height="30" srcset="media/TikTok-medium.png">
+                        <img src="media/TikTok-desktop.svg.webp" alt="TikTok logo" height="40" style="float:right;">
+                    </picture>
+                Build a Notification System</p>
+                <aside>Jun 2022 - Sept 2022</aside>
+                <ul>
+                    <li>Designed, implemented, and deployed a <span>notification system</span> to notify users based on different message contents, user types, and notification status.</li>
+                    <li>Implemented <span>data lineage finding service</span> to detect the users to notify and the key information.</li>
+                    <li>Generated, connected, and maintained a meta table (in <span>Spark</span> and <span>MySQL</span>) on the relational database platform to store notification information.</li>
+                    <li>Checked user’s action after notifying and changed the notification frequency, status, and message of the user accordingly.</li>
+                    <li>Designed a <span>RESTful API</span> for the authorized on-call team to update specific status in the meta table.</li>
+                </ul>
+              </details>
+        </section>
+        <hr>
+        <section>
+            <h2>Projects</h2>
+            <details>
+                <summary>Deisgn a YelpCamp</summary>
+                <aside style="margin: 10px 0px;">Feb 2022 - Apr 2022</aside>
+                <ul>
+                    <li>Developed a full-stack web application and deployed it on Heroku which allows campgrounds searching, commenting, and editing.</li>
+                    <li>Implemented a responsive font-UI using <span>Bootstrap framework</span> and <span>EJS templates</span> with HTML and CSS, built a RESTful API supporting client-server interaction using <span>Express</span> on Node.js, and used <span>MongoDB</span> to maintain backend information.</li>
+                    <li>Conducted user authentication with <span>Passport.js</span> middleware.</li>
+                </ul>
+            </details>
+        </section>
+        <hr>
+        <section>
+            <h2>Playgrounds</h2>
+            <canvas id="myCanvas" height="80" width="170"></canvas>
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.font = "30px Arial";
+                ctx.strokeText("Hello World",10,50);
+            </script>
+        </section>
+    </main>
+    <footer>
+        <h2>Contact me at:</h2>
+        <ul>
+            <li><a href="mailto:zhz080@ucsd.edu">Email me!</a></li>
+            <li>Mobile: 000-000-0000</li>
+            <li><a href="https://www.linkedin.com/in/zhixiao-zhang/">Linkedin connect!</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

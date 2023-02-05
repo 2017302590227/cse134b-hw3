@@ -1,0 +1,213 @@
+:root {
+    --main-bg-color: rgb(214, 235, 238);
+    --main-text-color:rgb(95, 97, 110);
+    --link-color: rgb(89, 140, 172);
+    --hover-bg-color:rgb(25, 82, 126);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color:var(--main-text-color);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav, footer ul{
+    width:50%;
+    height: 30px;
+    margin: auto;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+a:link, a:visited {
+    color:var(--link-color);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: var(--hover-bg-color);
+    color: white;
+}
+
+h1, footer h2{
+    text-align: center;
+}
+
+section{
+    margin-left: 30px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer{
+    margin-bottom: 30px;
+}
+
+summary{
+    font-size: 1.2em;
+}
+
+details p{
+    display: inline-block; 
+    font-size: 1.1em;
+    line-height: 40px;
+}
+
+details ul, #education, #skills, #awards, #message{
+    width: 85%;
+}
+
+#companyLogo{
+    filter:contrast(0.8);
+    filter:brightness(70%);
+}
+
+hr{
+    margin-left: 30px;
+    width: 85%;
+}
+
+span{
+    color:rgb(54, 104, 82);
+}
+
+span:hover{
+    background-color: rgb(14, 86, 76);
+    color:white;
+    border-radius: 20%;
+}
+
+@keyframes example{
+    from {background-color:  rgb(193, 170, 216);}
+    to {background-color: rgb(223, 226, 151);}
+}
+
+canvas{
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: rgb(193, 170, 216);
+    transform: skewY(10deg);
+    animation-name: example;
+    animation-duration: 20s;
+}
+
+#bios{
+    width:85%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.idPhoto1{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li aside{
+    margin: 10px 0px;
+}
+
+fieldset{
+    border: 0 none;
+    width: 95%;
+    padding-left: 0;
+    display: flex;
+    align-items:start;
+    justify-content:space-between;
+}
+
+fieldset div:nth-child(3){
+    margin-left: 10px;
+}
+
+.formTitle{
+    text-align: center;
+    margin: 3px 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#messagetext{
+    width: 95%;
+    height: 80px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+#inputContainer{
+    display: flex;
+    justify-content: center; 
+}
+
+#input{
+    background-color: var(--link-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0px;
+}
+
+#input:hover{
+    background-color: var(--hover-bg-color);
+}
+
+/* Small devices */
+@media (min-width:0px) and (max-width: 768px){
+    nav, footer ul{
+        height: 50px;
+        margin-left: 30px;
+        flex-direction: column;
+    }
+    h1{
+        margin-left: 30px;
+        width:50%;
+    }
+    footer h2{
+        text-align: left;
+        margin-left:30px;
+    }
+    details p{
+        line-height: 20px;
+    }
+    #bios{
+        flex-direction: column;
+    }
+    .idPhoto1{
+        margin-bottom: -10px;
+    }
+    fieldset{
+        height: 120px;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    fieldset div:nth-child(3){
+        margin-left: 0px;
+    }
+}
+
+/* Medium devices */
+@media (min-width:768px) and (max-width: 992px){
+    nav, footer ul{
+        height: 50px;
+        flex-direction: column;
+    }
+    details p{
+        line-height: 30px;
+    }
+    fieldset{
+        height: 120px;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    fieldset div:nth-child(3){
+        margin-left: 0px;
+    }
+}
+
